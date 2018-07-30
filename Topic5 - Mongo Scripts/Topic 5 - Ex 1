@@ -1,0 +1,79 @@
+use high-school
+
+db.createCollection('Students')
+db.createCollection('Teachers')
+db.createCollection('Courses')
+db.createCollection('Attends')
+db.createCollection('Schedules')
+db.createCollection('AssingedTime')
+
+db.Students.insert({_id: 01, Registration_Number: 1, First_Name:"A", Last_Name:"A", Birthday:"1990-01-01"});
+db.Students.insert({_id: 02, Registration_Number: 2, First_Name:"B", Last_Name:"B", Birthday:"1990-01-01"});
+db.Students.insert({_id: 03, Registration_Number: 3, First_Name:"C", Last_Name:"C", Birthday:"1990-01-01"});
+db.Students.insert({_id: 04, Registration_Number: 4, First_Name:"D", Last_Name:"D", Birthday:"1990-01-01"});
+db.Students.insert({_id: 05, Registration_Number: 5, First_Name:"E", Last_Name:"E", Birthday:"1990-01-01"});
+db.Students.insert({_id: 06, Registration_Number: 6, First_Name:"F", Last_Name:"F", Birthday:"1990-01-01"});
+db.Students.insert({_id: 07, Registration_Number: 7, First_Name:"G", Last_Name:"G", Birthday:"1990-01-01"});
+db.Students.insert({_id: 08, Registration_Number: 8, First_Name:"H", Last_Name:"H", Birthday:"1990-01-01"});
+db.Students.insert({_id: 09, Registration_Number: 9, First_Name:"I", Last_Name:"I", Birthday:"1990-01-01"});
+db.Students.insert({_id: 10, Registration_Number: 10, First_Name:"J", Last_Name:"J", Birthday:"1990-01-01"});
+db.Students.insert({_id: 11, Registration_Number: 11, First_Name:"K", Last_Name:"K", Birthday:"1990-01-01"});
+db.Students.insert({_id: 12, Registration_Number: 12, First_Name:"L", Last_Name:"L", Birthday:"1990-01-01"});
+db.Students.insert({_id: 13, Registration_Number: 13, First_Name:"M", Last_Name:"M", Birthday:"1990-01-01"});
+db.Students.insert({_id: 14, Registration_Number: 14, First_Name:"N", Last_Name:"N", Birthday:"1990-01-01"});
+db.Students.insert({_id: 15, Registration_Number: 15, First_Name:"O", Last_Name:"O", Birthday:"1990-01-01"});
+db.Students.insert({_id: 16, Registration_Number: 16, First_Name:"P", Last_Name:"P", Birthday:"1990-01-01"});
+db.Students.insert({_id: 17, Registration_Number: 17, First_Name:"Q", Last_Name:"Q", Birthday:"1990-01-01"});
+db.Students.insert({_id: 18, Registration_Number: 18, First_Name:"R", Last_Name:"R", Birthday:"1990-01-01"});
+db.Students.insert({_id: 19, Registration_Number: 19, First_Name:"S", Last_Name:"S", Birthday:"1990-01-01"});
+db.Students.insert({_id: 20, Registration_Number: 20, First_Name:"T", Last_Name:"T", Birthday:"1990-01-01"});
+db.Students.insert({_id: 21, Registration_Number: 21, First_Name:"U", Last_Name:"U", Birthday:"1990-01-01"});
+db.Students.insert({_id: 22, Registration_Number: 22, First_Name:"V", Last_Name:"V", Birthday:"1990-01-01"});
+db.Students.insert({_id: 23, Registration_Number: 23, First_Name:"W", Last_Name:"W", Birthday:"1990-01-01"});
+db.Students.insert({_id: 24, Registration_Number: 24, First_Name:"X", Last_Name:"X", Birthday:"1990-01-01"});
+db.Students.insert({_id: 25, Registration_Number: 25, First_Name:"Y", Last_Name:"Y", Birthday:"1990-01-01"});
+db.Students.insert({_id: 26, Registration_Number: 26, First_Name:"Z", Last_Name:"Z", Birthday:"1990-01-01"});
+db.Students.insert({_id: 27, Registration_Number: 27, First_Name:"AA", Last_Name:"AA", Birthday:"1990-01-01"});
+db.Students.insert({_id: 28, Registration_Number: 28, First_Name:"AB", Last_Name:"AB", Birthday:"1990-01-01"});
+db.Students.insert({_id: 29, Registration_Number: 29, First_Name:"AC", Last_Name:"AC", Birthday:"1990-01-01"});
+db.Students.insert({_id: 30, Registration_Number: 30, First_Name:"AD", Last_Name:"AD", Birthday:"1990-01-01"});
+
+db.Teachers.insert({_id: 01, First_Name:"TeacherA", Last_Name:"TeacherA", Birthday:"1990-01-01"});
+db.Teachers.insert({_id: 02, First_Name:"TeacherB", Last_Name:"TeacherB", Birthday:"1990-01-01"});
+db.Teachers.insert({_id: 03, First_Name:"TeacherC", Last_Name:"TeacherC", Birthday:"1990-01-01"});
+
+db.Courses.insert({_id: 01, Name:"Math", Teacher: 01, Weekly_hours: 10});
+db.Courses.insert({_id: 02, Name:"History", Teacher: 02, Weekly_hours: 10});
+db.Courses.insert({_id: 03, Name:"Law", Teacher: 03, Weekly_hours: 5});
+
+db.Attends.insert({Student: 01, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 02, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 03, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 04, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 05, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 06, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 07, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 08, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 09, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 10, Course: 01, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 11, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 12, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 13, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 14, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 15, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 16, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 17, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 18, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 19, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 20, Course: 02, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 21, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 22, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 23, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 24, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 25, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 26, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 27, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 28, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 29, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+db.Attends.insert({Student: 30, Course: 03, First_Note: 4.0, Second_Note: 5.0, Third_Note: 6.0, Final_Note: 5.0});
+

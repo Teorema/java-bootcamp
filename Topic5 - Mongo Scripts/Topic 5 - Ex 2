@@ -1,0 +1,3 @@
+db.Attends.find(
+	{ Final_Note: { $gte: 4.0 } , Course: 01 }
+)

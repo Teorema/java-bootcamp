@@ -1,0 +1,5 @@
+var TeacherID = db.Teachers.findOne({ First_Name: "TeacherA" }, { "_id": 1})
+
+db.Courses.find(
+	{ Teacher: TeacherID._id }
+).sort({Name:1})
