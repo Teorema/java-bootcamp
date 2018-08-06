@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Login</h1>
+	<span th:if="${usernameError != null}" class="error">Username not found</span>
+	<span th:if="${passwordError != null}" class="error">Invalid password</span>
+	<form action="#" th:action="@{/login}" th:object="${User}" method="post">
+    	<div><label>Username: <input type="text" th:field="*{username}" name="username" required="required"/></label></div>
+        <div><label>Password: <input type="password" th:field="*{password}" name="password" required="required"/></label></div>
+        <div><input type="submit" value="Sign In"/></div>
+    </form>
+</body>
+</html>

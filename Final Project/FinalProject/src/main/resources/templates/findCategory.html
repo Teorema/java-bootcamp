@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Find Products by Category</h1>
+	<form action="#" th:action="@{/findByCategory}" th:object="${product}" method="post">
+    	<div><label>Category: <input type="number" th:field="*{category}" name="category" required="required"/></label></div>
+        <div><input type="submit" value="Search"/></div>
+    </form>
+    <span th:if="${errorMessage != null}" class="error">No products found</span>
+    <div th:each="message : ${products}">
+    	<span th:text="${message.id}">Id</span>
+        <span th:text="${message.name}">Name</span>
+        <span th:text="${message.price}">Price</span>
+        <a th:href="@{/addToCart(id=${message.id})}" th:unless="${message == null}">Add to Cart</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>New User Registration Form</h1>
+    <span th:if="${errorMessage != null}" class="error">Username already in use</span>
+    <form action="#" th:action="@{/addUser}" th:object="${User}" method="post">
+    	<label for="inputUsername" class="sr-only">Username </label>
+    	<input type="text" th:field="*{username}" name="username" class="form-control" required="required"/><br>
+    	<label for="inputName" class="sr-only">Password </label>
+    	<input type="text" th:field="*{password}" name="password" class="form-control" required="required"/>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

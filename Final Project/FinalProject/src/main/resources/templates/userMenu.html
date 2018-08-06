@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>User Home</h1>
+	<span th:if="${loginUser == true}">Login successfully</span>
+	<ul>
+		<li><a href='/getCart'>Get Cart</a></li>
+		<li><a href='/findByCategory'>Show Products By Category</a></li>
+		<li><a href='/findByName'>Show Products By Name </a></li>
+		<li><a href='/buyProducts'>Finish Shopping</a></li>
+		<li><a href='/logout'>Logout</a></li>
+	</ul>
+</body>
+</html>
